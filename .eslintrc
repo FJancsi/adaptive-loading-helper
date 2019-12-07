@@ -1,0 +1,60 @@
+{
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "ecmaFeatures": {
+            "modules": true
+        },
+        "sourceType": "module"
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "globals": {
+        "test": true,
+        "expect": true,
+        "describe": true,
+        "it": true,
+        "beforeAll": true
+    },
+    "rules": {
+        "no-unused-expressions": [
+            "error",
+            {
+                "allowShortCircuit": true,
+                "allowTernary": false
+            }
+        ],
+        "no-cond-assign": [
+            2,
+            "except-parens"
+        ],
+        "no-loop-func": 0,
+        "quotes": [
+            2,
+            "single"
+        ],
+        "prefer-const": [
+            "error",
+            {
+                "destructuring": "any",
+                "ignoreReadBeforeAssign": false
+            }
+        ],
+        "object-shorthand": [
+            "error",
+            "methods"
+        ],
+        "eqeqeq": 2,
+        "curly": 2,
+        "no-eq-null": 2,
+        "dot-notation": 0,
+        "no-eval": 2,
+        "no-var": 2,
+        "no-unused-vars": 0
+    }
+}
