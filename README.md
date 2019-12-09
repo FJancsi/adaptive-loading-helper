@@ -1,4 +1,9 @@
-# adaptive-loading-helper
+[![Known Vulnerabilities](https://snyk.io/test/github/FJancsi/adaptive-loading-helper/badge.svg?targetFile=package.json)](https://snyk.io/test/github/FJancsi/adaptive-loading-helper?targetFile=package.json)
+[![Downloads](https://img.shields.io/npm/dm/adaptive-loading-helper.svg)](https://npmcharts.com/compare/adaptive-loading-helper?minimal=true)
+[![npm](https://img.shields.io/npm/v/adaptive-loading-helper.svg)](https://www.npmjs.com/package/adaptive-loading-helper)
+[![license](https://img.shields.io/npm/l/adaptive-loading-helper.svg)](https://www.npmjs.com/package/adaptive-loading-helper)
+
+# Adaptive loading helper 🚀
 Helper util to get info about the target platform performance
 
 ## Example
