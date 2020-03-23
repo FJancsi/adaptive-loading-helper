@@ -1,6 +1,6 @@
 {
   "name": "adaptive-loading-helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Helper util to get info about the target platform performance",
   "main": "build/index.js",
   "scripts": {
