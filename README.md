@@ -20,5 +20,5 @@ import getAdaptiveLoadingData from 'adaptive-loading-helper';
 
 const adaptiveData = getAdaptiveLoadingData();
 console.log(adaptiveData);
-// { cpu: 4, memory: 8, connection: '4g' }
+// { cpu: 4, memory: 8, connection: '4g',  mobile: false}
 ```

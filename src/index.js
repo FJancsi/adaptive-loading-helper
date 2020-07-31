@@ -3,15 +3,17 @@ const getAdaptiveLoadingData = () => {
         const {
             deviceMemory,
             hardwareConcurrency,
-            connection
+            connection,
+            userAgentData
         } = window.navigator,
             adaptiveData = {};
 
-            deviceMemory && (adaptiveData.memory = deviceMemory);
-            hardwareConcurrency && (adaptiveData.cpu = hardwareConcurrency);
-            connection && connection.effectiveType && (adaptiveData.connection = connection.effectiveType);
+        deviceMemory && (adaptiveData.memory = deviceMemory);
+        hardwareConcurrency && (adaptiveData.cpu = hardwareConcurrency);
+        connection?.effectiveType && (adaptiveData.connection = connection.effectiveType);
+        userAgentData?.mobile && (adaptiveData.isMobile = userAgentData.mobile);
 
-            return adaptiveData;
+        return adaptiveData;
     } else {
         throw new Error('Navigator object is not supported on your env.');
     }

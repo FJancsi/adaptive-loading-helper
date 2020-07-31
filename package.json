@@ -26,14 +26,14 @@
   },
   "homepage": "https://github.com/FJancsi/adaptive-loading-helper#readme",
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.5",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.7.2",
+    "eslint": "^7.5.0",
     "jest": "^24.9.0",
-    "lockfile-lint": "^3.0.3",
-    "np": "^5.2.1"
+    "lockfile-lint": "^3.0.18",
+    "np": "^6.3.2"
   },
   "dependencies": {}
 }

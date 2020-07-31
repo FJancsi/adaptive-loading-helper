@@ -40,9 +40,14 @@ describe('Adaptive Loading', () => {
         expect(adaptiveData.connection).toBe('4g');
     });
 
+    it('should return mobile user agen data', () => {
+        const adaptiveData = getAdaptiveLoadingData();
+        expect(adaptiveData.mobile).toBeFalsy();
+    });
+
     it('should throw error if navigator is not supported', () => {
         delete window.navigator;
         const getInfo = () => getAdaptiveLoadingData();
-        expect(getInfo).toThrowError(new Error ('Navigator object is not supported on your env.'));
+        expect(getInfo).toThrowError(new Error('Navigator object is not supported on your env.'));
     });
 });
