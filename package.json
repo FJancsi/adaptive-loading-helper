@@ -29,9 +29,8 @@
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
-    "babel-jest": "^24.9.0",
     "eslint": "^7.5.0",
-    "jest": "^24.9.0",
+    "jest": "^27.0.0-next.2",
     "lockfile-lint": "^3.0.18",
     "np": "^6.3.2"
   },
