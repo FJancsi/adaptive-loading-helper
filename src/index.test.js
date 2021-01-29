@@ -28,7 +28,7 @@ describe('Adaptive Loading', () => {
 
         Object.defineProperty(window.navigator.connection, 'downlink', {
             writable: true,
-            value: 6,
+            value: 7,
         });
 
         Object.defineProperty(window.navigator.userAgentData, 'mobile', {
@@ -68,7 +68,7 @@ describe('Adaptive Loading', () => {
 
     it('should return downlink', async () => {
         const adaptiveData = await getAdaptiveLoadingData();
-        expect(adaptiveData.network.downlink).toBe(6);
+        expect(adaptiveData.network.downlink).toBe(7);
     });
 
     it('should return isMobile user agen data', async () => {
