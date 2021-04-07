@@ -7,9 +7,6 @@ const getAdaptiveLoadingData = async () => {
                 connection,
                 userAgentData
             } = window.navigator;
-            
-            const { level, charging } = await navigator?.getBattery();
-            const { quota } = await navigator?.storage?.estimate();
     
             const adaptiveData = {
                 battery: {},
@@ -33,12 +30,20 @@ const getAdaptiveLoadingData = async () => {
             // !isMobile -> load costly stuff
             userAgentData?.mobile && (adaptiveData.isMobile = userAgentData.mobile);
     
-            //Batter (charging || level > 2) -> load costly stuff 
-            level && (adaptiveData.battery.level = level);
-            charging && (adaptiveData.battery.charging = charging);
-    
+            //Batter (charging || level > 2) -> load costly stuff
+            if (navigator.getBattery) {
+                const { level, charging } = await navigator?.getBattery();
+
+                level && (adaptiveData.battery.level = level);
+                charging && (adaptiveData.battery.charging = charging);
+            }
+            
             // Quota quota > xyMB -> load costly stuff
-            quota && (adaptiveData.quota = quota);
+            if (navigator.storage) {
+                const { quota } = await navigator?.storage?.estimate();
+                
+                quota && (adaptiveData.quota = quota);
+            }
     
             return adaptiveData;
         } else {
