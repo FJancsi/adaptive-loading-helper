@@ -8,7 +8,7 @@ const getAdaptiveLoadingData = async () => {
                 userAgentData
             } = window.navigator;
             
-            const { level, charging } = await navigator.getBattery();
+            const { level, charging } = await navigator?.getBattery();
             const { quota } = await navigator?.storage?.estimate();
     
             const adaptiveData = {
