@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/FJancsi/adaptive-loading-helper.svg?branch=master)](https://travis-ci.org/FJancsi/adaptive-loading-helper)
 [![Known Vulnerabilities](https://snyk.io/test/github/FJancsi/adaptive-loading-helper/badge.svg?targetFile=package.json)](https://snyk.io/test/github/FJancsi/adaptive-loading-helper?targetFile=package.json)
 [![Downloads](https://img.shields.io/npm/dm/adaptive-loading-helper.svg)](https://npmcharts.com/compare/adaptive-loading-helper?minimal=true)
 [![npm](https://img.shields.io/npm/v/adaptive-loading-helper.svg)](https://www.npmjs.com/package/adaptive-loading-helper)
