@@ -33,7 +33,7 @@
     "eslint": "^7.5.0",
     "jest": "^27.0.0-next.2",
     "lockfile-lint": "^3.0.18",
-    "np": "^6.3.2"
+    "np": "^8.0.4"
   },
   "dependencies": {}
 }
